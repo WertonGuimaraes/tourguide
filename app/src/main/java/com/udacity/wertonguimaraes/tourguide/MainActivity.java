@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageButton mRegionalFood;
+    private ImageButton mRestaurant;
+    private ImageButton mEvent;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,19 +21,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void mInitView() {
-        mRegionalFood = (ImageButton) findViewById(R.id.regional_food_button);
+        mRestaurant = (ImageButton) findViewById(R.id.restaurant_button);
+        mEvent = (ImageButton) findViewById(R.id.event_button);
     }
 
     private void mInitButtonListeners() {
-        mRegionalFood.setOnClickListener(mAddPointListener);
+        mRestaurant.setOnClickListener(mOpenNewActivity);
+        mEvent.setOnClickListener(mOpenNewActivity);
     }
 
-    private View.OnClickListener mAddPointListener = new View.OnClickListener() {
+    private View.OnClickListener mOpenNewActivity = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
-                case R.id.regional_food_button:
-                    openNewActivity(RegionalFoodActivity.class);
+                case R.id.restaurant_button:
+                    startNewActivity(RestaurantActivity.class);
+                    break;
+                case R.id.event_button:
+                    startNewActivity(EventActivity.class);
                     break;
                 default:
                     break;
@@ -39,10 +46,9 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private void openNewActivity(Class<?> activityClass) {
+    private void startNewActivity(Class<?> activityClass) {
         Intent myIntent = new Intent(MainActivity.this, activityClass);
+        myIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         MainActivity.this.startActivity(myIntent);
     }
-
-
 }

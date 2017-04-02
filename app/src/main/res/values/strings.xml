@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">Tour guide</string>
 
-    <string name="regional_food">Regional Food</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="email">werton007@gmail.com</string>
+
+
+    <string name="restaurants">Restaurants</string>
+    <string name="events">Events</string>
+
 
     <string name="undefined">UNDEFINED</string>
     <string name="loren">Maecenas ipsum velit, consectetuer eu, lobortis ut, dictum at, dui. In rutrum. Sed ac dolor sit amet purus malesuada congue. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Suspendisse sagittis ultrices augue. Mauris metus. Nunc</string>
