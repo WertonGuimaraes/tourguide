@@ -2,10 +2,14 @@ package com.udacity.wertonguimaraes.tourguide;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -39,24 +43,35 @@ public class InfoListAdapter extends RecyclerView.Adapter<InfoListAdapter.ViewHo
     public void onBindViewHolder(ViewHolder holder, int position) {
         Info info = mInfoList.get(position);
 
-//        //Render image using Picasso library
-//        if (!TextUtils.isEmpty(feedItem.getThumbnail())) {
-//            Picasso.with(mContext).load(feedItem.getThumbnail())
-//                    .error(R.drawable.placeholder)
-//                    .placeholder(R.drawable.placeholder)
-//                    .into(customViewHolder.imageView);
-//        }
+        //Render image using Picasso library
+        if (info.getPhoto() > 0) {
+            Picasso.with(mContext).load(info.getPhoto())
+//                    .error(R.mipmap.ic_launcher)
+//                    .placeholder(R.mipmap.ic_launcher)
+                    .into(holder.photoView);
+        }
 
-        holder.textView.setText(info.getName());
-
+        holder.titleView.setText(info.getName());
+        holder.streetView.setText(info.getStreet());
+        holder.phoneView.setText(info.getPhone());
+        holder.descriptionView.setText(info.getDescription());
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        protected TextView textView;
+        protected TextView titleView;
+        protected TextView streetView;
+        protected TextView phoneView;
+        protected TextView descriptionView;
+        protected ImageView photoView;
+
 
         public ViewHolder(View view) {
             super(view);
-            this.textView = (TextView) view.findViewById(R.id.name);
+            this.titleView = (TextView) view.findViewById(R.id.name);
+            this.streetView = (TextView) view.findViewById(R.id.location);
+            this.phoneView = (TextView) view.findViewById(R.id.phone);
+            this.descriptionView = (TextView) view.findViewById(R.id.description);
+            this.photoView = (ImageView) view.findViewById(R.id.photo_view);
         }
     }
 }

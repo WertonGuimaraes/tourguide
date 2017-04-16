@@ -12,10 +12,13 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class EventActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+/**
+ * Created by wertonguimaraes on 16/04/17.
+ */
+
+public class InfoActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     private RecyclerView rvItem;
     private InfoListAdapter adapter;
@@ -29,7 +32,6 @@ public class EventActivity extends AppCompatActivity implements NavigationView.O
         setContentView(R.layout.menu);
 
         mInitView();
-        mPopulateRecyclerView(RestaurantsInfo());
         setSupportActionBar(mToolbat);
         createDrawer();
         mInitListeners();
@@ -42,9 +44,9 @@ public class EventActivity extends AppCompatActivity implements NavigationView.O
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
     }
 
-    private void mPopulateRecyclerView(List<Info> infoList) {
+    protected void mPopulateRecyclerView(List<Info> infoList) {
         rvItem.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new InfoListAdapter(EventActivity.this, infoList);
+        adapter = new InfoListAdapter(InfoActivity.this, infoList);
         rvItem.setAdapter(adapter);
     }
 
@@ -59,17 +61,6 @@ public class EventActivity extends AppCompatActivity implements NavigationView.O
         toggle.syncState();
     }
 
-    private List<Info> RestaurantsInfo() {
-        List<Info> mInfoList = new ArrayList<>();
-        mInfoList.add(new Info(1, "1", "decricao"));
-        mInfoList.add(new Info(2, "2", "decricao"));
-        mInfoList.add(new Info(3, "3", "decricao"));
-        mInfoList.add(new Info(4, "4", "decricao"));
-        mInfoList.add(new Info(5, "5", "decricao"));
-        mInfoList.add(new Info(6, "6", "decricao"));
-        mInfoList.add(new Info(7, "7", "decricao"));
-        return mInfoList;
-    }
 
     @Override
     public void onBackPressed() {
@@ -89,8 +80,8 @@ public class EventActivity extends AppCompatActivity implements NavigationView.O
 
         if (id == R.id.nav_restaurant) {
             startNewActivity(RestaurantActivity.class);
-        } else if (id == R.id.nav_event) {
-
+        } else if (id == R.id.nav_touristic_point) {
+            startNewActivity(TouristicPointActivity.class);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

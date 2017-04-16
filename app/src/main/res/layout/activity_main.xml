@@ -7,13 +7,12 @@
     android:orientation="vertical"
     android:background="@drawable/background"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.udacity.wertonguimaraes.tourguide.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:context="com.udacity.wertonguimaraes.tourguide.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="80dp"
         android:orientation="vertical">
 
         <ImageView
@@ -71,18 +70,18 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/event_button"
+                android:id="@+id/touristic_point_button"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
-                android:background="@mipmap/ic_launcher_round" />
+                android:background="@drawable/touristic_point" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="@string/events"
+                android:text="@string/touristic_points"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>
@@ -102,18 +101,18 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/imageView1"
+                android:id="@+id/photo_view"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
-                android:background="@mipmap/ic_launcher_round" />
+                android:background="@drawable/shop" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="@string/undefined"
+                android:text="@string/shops"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>
@@ -128,14 +127,14 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
-                android:background="@mipmap/ic_launcher_round" />
+                android:background="@drawable/bar" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="@string/undefined"
+                android:text="@string/bars"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>
@@ -150,14 +149,14 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
-                android:background="@mipmap/ic_launcher_round" />
+                android:background="@drawable/hotel" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="@string/undefined"
+                android:text="@string/hotels"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>

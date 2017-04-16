@@ -8,7 +8,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
     private ImageButton mRestaurant;
-    private ImageButton mEvent;
+    private ImageButton mTouristicPoint;
 
 
     @Override
@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void mInitView() {
         mRestaurant = (ImageButton) findViewById(R.id.restaurant_button);
-        mEvent = (ImageButton) findViewById(R.id.event_button);
+        mTouristicPoint = (ImageButton) findViewById(R.id.touristic_point_button);
     }
 
     private void mInitButtonListeners() {
         mRestaurant.setOnClickListener(mOpenNewActivity);
-        mEvent.setOnClickListener(mOpenNewActivity);
+        mTouristicPoint.setOnClickListener(mOpenNewActivity);
     }
 
     private View.OnClickListener mOpenNewActivity = new View.OnClickListener() {
@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.restaurant_button:
                     startNewActivity(RestaurantActivity.class);
                     break;
-                case R.id.event_button:
-                    startNewActivity(EventActivity.class);
+                case R.id.touristic_point_button:
+                    startNewActivity(TouristicPointActivity.class);
                     break;
                 default:
                     break;

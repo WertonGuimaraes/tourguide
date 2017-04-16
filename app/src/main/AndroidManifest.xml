@@ -22,12 +22,12 @@
         <activity
             android:name=".RestaurantActivity"
             android:label="@string/restaurants"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBarAndNoAnimTheme">
         </activity>
         <activity
-            android:name=".EventActivity"
-            android:label="@string/events"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".TouristicPointActivity"
+            android:label="@string/touristic_points"
+            android:theme="@style/AppTheme.NoActionBarAndNoAnimTheme">
         </activity>
     </application>
 

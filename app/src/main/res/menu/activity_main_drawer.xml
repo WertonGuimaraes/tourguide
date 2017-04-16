@@ -7,8 +7,20 @@
             android:icon="@mipmap/ic_restaurant_menu"
             android:title="@string/restaurants" />
         <item
-            android:id="@+id/nav_event"
-            android:icon="@mipmap/ic_launcher"
-            android:title="@string/events" />
+            android:id="@+id/nav_touristic_point"
+            android:icon="@mipmap/ic_touristic_point_menu"
+            android:title="@string/touristic_points" />
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@mipmap/ic_shop_menu"
+            android:title="@string/shops" />
+        <item
+            android:id="@+id/nav_bar"
+            android:icon="@mipmap/ic_bar_menu"
+            android:title="@string/bars" />
+        <item
+            android:id="@+id/nav_hotel"
+            android:icon="@mipmap/ic_hotel_menu"
+            android:title="@string/hotels" />
     </group>
 </menu>
