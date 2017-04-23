@@ -1,4 +1,4 @@
-package com.udacity.wertonguimaraes.tourguide;
+package com.udacity.wertonguimaraes.tourguide.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+
+import com.udacity.wertonguimaraes.tourguide.R;
+import com.udacity.wertonguimaraes.tourguide.adpter.InfoListAdapter;
+import com.udacity.wertonguimaraes.tourguide.model.Info;
 
 import java.util.List;
 
@@ -75,13 +79,18 @@ public class InfoActivity extends AppCompatActivity implements NavigationView.On
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.nav_restaurant) {
             startNewActivity(RestaurantActivity.class);
         } else if (id == R.id.nav_touristic_point) {
             startNewActivity(TouristicPointActivity.class);
+        } else if (id == R.id.nav_bar) {
+            startNewActivity(BarPointActivity.class);
+        } else if (id == R.id.nav_hotel) {
+            startNewActivity(HotelPointActivity.class);
+        } else if (id == R.id.nav_shop) {
+            startNewActivity(ShopPointActivity.class);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

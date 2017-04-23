@@ -7,19 +7,20 @@
     android:orientation="vertical"
     android:background="@drawable/background"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.udacity.wertonguimaraes.tourguide.MainActivity">
+    tools:context="com.udacity.wertonguimaraes.tourguide.activity.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="80dp"
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
-            app:srcCompat="@mipmap/ic_launcher_round" />
+            app:srcCompat="@drawable/logo" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -101,7 +102,7 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/photo_view"
+                android:id="@+id/shop_button"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
@@ -124,6 +125,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/bar_button"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
@@ -146,6 +148,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/hotel_button"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"

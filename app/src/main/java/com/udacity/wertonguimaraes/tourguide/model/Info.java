@@ -1,4 +1,4 @@
-package com.udacity.wertonguimaraes.tourguide;
+package com.udacity.wertonguimaraes.tourguide.model;
 
 /**
  * Created by wertonguimaraes on 27/03/17.

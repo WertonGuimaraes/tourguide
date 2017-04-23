@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -20,15 +20,31 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RestaurantActivity"
+            android:name=".activity.RestaurantActivity"
             android:label="@string/restaurants"
             android:theme="@style/AppTheme.NoActionBarAndNoAnimTheme">
         </activity>
         <activity
-            android:name=".TouristicPointActivity"
+            android:name=".activity.TouristicPointActivity"
             android:label="@string/touristic_points"
             android:theme="@style/AppTheme.NoActionBarAndNoAnimTheme">
         </activity>
+        <activity
+            android:name=".activity.BarPointActivity"
+            android:label="@string/bars"
+            android:theme="@style/AppTheme.NoActionBarAndNoAnimTheme">
+        </activity>
+        <activity
+            android:name=".activity.HotelPointActivity"
+            android:label="@string/hotels"
+            android:theme="@style/AppTheme.NoActionBarAndNoAnimTheme">
+        </activity>
+        <activity
+            android:name=".activity.ShopPointActivity"
+            android:label="@string/shops"
+            android:theme="@style/AppTheme.NoActionBarAndNoAnimTheme">
+        </activity>
+
     </application>
 
 </manifest>

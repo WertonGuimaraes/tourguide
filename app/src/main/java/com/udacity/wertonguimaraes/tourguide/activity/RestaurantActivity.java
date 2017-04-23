@@ -1,6 +1,9 @@
-package com.udacity.wertonguimaraes.tourguide;
+package com.udacity.wertonguimaraes.tourguide.activity;
 
 import android.os.Bundle;
+
+import com.udacity.wertonguimaraes.tourguide.R;
+import com.udacity.wertonguimaraes.tourguide.model.Info;
 
 import java.util.ArrayList;
 import java.util.List;
