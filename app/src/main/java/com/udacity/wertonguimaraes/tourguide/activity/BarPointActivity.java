@@ -22,11 +22,29 @@ public class BarPointActivity extends InfoActivity {
         mInfoList.add(
                 new Info(
                         1,
-                        "MUSEU DOS TRES PANDEIROS",
-                        "R. Dr. Severino Cruz - Centro, Campina Grande - PB, 58400-258",
-                        "(83) 3310-9738",
-                        "O museu foi projetado pelo arquiteto Oscar Niemeyer, sendo sua última obra. Desde junho de 2014, o museu acolhe trabalhos dos mais talentosos artistas paraibanos, como Sivuca, Jackson do Pandeiro, Marinês, Elba Ramalho, entre outros.",
-                        R.drawable.banner_tres_pandeiros));
+                        "ARENA PUB",
+                        "R. Dr. Severino Cruz, 679 - Centro, Campina Grande - PB",
+                        "(83) 99826-0505",
+                        "colocar descrição",
+                        R.drawable.bar_arena));
+
+        mInfoList.add(
+                new Info(
+                        2,
+                        "BAR DO NILSON",
+                        "R. Maj. Belmiro, 394 - São José, Campina Grande - PB",
+                        null,
+                        "Bar universitário, um ar muito peculiar de alternatividade, mas pode ser frequentado tranquilamente por qualquer público, foge do clichê.",
+                        R.drawable.bar_nilson));
+
+        mInfoList.add(
+                new Info(
+                        3,
+                        "PETISCARIA BAR",
+                        "R. Vidal de Negreiros, 291 - Centro, Campina Grande - PB",
+                        "(83) 3322-4110",
+                        "Local agradável e aconchegante. Pequeno mas bem decorado. Preços muito altos. Boa variedade de pratos. Pouco coisa regional.",
+                        R.drawable.bar_petiscaria));
         return mInfoList;
     }
 }

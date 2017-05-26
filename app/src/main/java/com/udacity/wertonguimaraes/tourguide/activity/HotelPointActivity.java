@@ -21,12 +21,30 @@ public class HotelPointActivity extends InfoActivity {
         List<Info> mInfoList = new ArrayList<>();
         mInfoList.add(
                 new Info(
+                        1,
+                        "GARDEN HOTEL",
+                        "Rua Eng. José Bezerra, 400 - Mirante, Campina Grande - PB",
+                        "(83) 3310-4000",
+                        "desc",
+                        R.drawable.hotel_garden));
+
+        mInfoList.add(
+                new Info(
                         2,
-                        "OS PIONEIROS",
-                        "R. Paulo de Frontin, 483-499 - Centro, Campina Grande - PB",
-                        null,
-                        "'Os Pioneiros da Borborema' homenageia as figuras do índio, da catadora de algodão e do tropeiro. O índio representa o início de tudo. A catadora de algodão faz referência à 'Era de Ouro' de Campina Grande, quando o município se tornou o segundo maior exportador de algodão do mundo. E o tropeiro presta homenagem à vocação comerciária da cidade.",
-                        R.drawable.banner_pioneiros));
+                        "HOTEL VILLAGE",
+                        "R. Otacílio Nepomuceno, 1285 - Catolé, Campina Grande - PB",
+                        "(83) 3310-8000",
+                        "desc",
+                        R.drawable.hotel_village));
+
+        mInfoList.add(
+                new Info(
+                        3,
+                        "POUSADA GRANVILE",
+                        "R. Manoel Felíciano, 600 - Jardim Quarenta, Campina Grande - PB",
+                        "(83) 3335-2436",
+                        "desc",
+                        R.drawable.hotel_granvile));
         return mInfoList;
     }
 }
