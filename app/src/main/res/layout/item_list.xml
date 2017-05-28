@@ -10,44 +10,38 @@
     <ImageView
         android:id="@+id/photo_view"
         android:layout_width="match_parent"
-        android:layout_height="144dp"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:layout_height="@dimen/banner_height"/>
 
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/undefined"
+        android:textColor="@color/black"
+        android:paddingTop="@dimen/distance_between_icons_info"
+        android:paddingBottom="@dimen/distance_between_icons_info"
         android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginEnd="@dimen/margin_info"
+        android:layout_marginStart="@dimen/margin_info"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="5dp">
+            android:paddingBottom="@dimen/distance_between_icons_info">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/marker" />
+                style="@style/ListViewIconStyle"
+                android:background="@drawable/marker" />
 
             <TextView
                 android:id="@+id/location"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="10dp"
-                android:layout_marginStart="10dp"
-                android:gravity="center_vertical"
-                android:text="@string/undefined"
-                android:textSize="13sp" />
+                style="@style/ListViewTextStyle"/>
         </LinearLayout>
 
         <LinearLayout
@@ -55,44 +49,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="5dp">
+            android:paddingBottom="@dimen/distance_between_icons_info">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                style="@style/ListViewIconStyle"
                 android:background="@drawable/phone" />
 
             <TextView
                 android:id="@+id/phone"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="10dp"
-                android:layout_marginStart="10dp"
-                android:gravity="center_vertical"
-                android:text="@string/undefined"
-                android:textSize="13sp" />
+                style="@style/ListViewTextStyle" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="5dp">
+            android:paddingBottom="@dimen/distance_between_icons_info">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                style="@style/ListViewIconStyle"
                 android:background="@drawable/comments" />
 
             <TextView
                 android:id="@+id/description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_marginStart="10dp"
-                android:gravity="center_vertical"
-                android:text="@string/loren"
-                android:textSize="13sp" />
+                style="@style/ListViewTextStyle"/>
 
         </LinearLayout>
 

@@ -47,7 +47,6 @@ public class InfoListAdapter extends RecyclerView.Adapter<InfoListAdapter.ViewHo
     public void onBindViewHolder(ViewHolder holder, int position) {
         Info info = mInfoList.get(position);
 
-        //Render image using Picasso library
         if (info.getPhoto() > 0) {
             Picasso.with(mContext).load(info.getPhoto())
                     .into(holder.photoView);

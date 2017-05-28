@@ -5,4 +5,8 @@
     <dimen name="nav_header_vertical_spacing">16dp</dimen>
     <dimen name="nav_header_height">160dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="banner_height">144dp</dimen>
+    <dimen name="margin_info">10dp</dimen>
+    <dimen name="distance_between_icons_info">5dp</dimen>
+
 </resources>

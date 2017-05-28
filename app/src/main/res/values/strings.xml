@@ -1,18 +1,78 @@
 <resources>
     <string name="app_name">Campina Tour</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Abrir a janela de navegação</string>
+    <string name="navigation_drawer_close">Fechar a janela de navegação</string>
     <string name="email">werton007@gmail.com</string>
 
-    <string name="restaurants">Restaurants</string>
-    <string name="touristic_points">Touristic Points</string>
+    <string name="bars">Bares</string>
+    <string name="arena_pub">ARENA PUB</string>
+    <string name="arena_pub_street">R. Dr. Severino Cruz, 679 - Centro</string>
+    <string name="arena_pub_phone">(83) 9 98260505</string>
+    <string name="arena_pub_description">Ótimo ambiente, variedades de músicas pra ninguém ficar parado, tem segurança e o melhor não é tão cara a entrada.</string>
+    <string name="nilson_bar">BAR DO NILSON</string>
+    <string name="nilson_bar_street">R. Maj. Belmiro, 394 - São José</string>
+    <string name="nilson_bar_description">Bar universitário, um ar muito peculiar de alternatividade, mas pode ser frequentado tranquilamente por qualquer público, foge do clichê.</string>
+    <string name="petiscaria_bar">PETISCARIA BAR</string>
+    <string name="petiscaria_bar_street">R. Vidal de Negreiros, 291 - Centro</string>
+    <string name="petiscaria_bar_phone">(83) 33224110</string>
+    <string name="petiscaria_bar_description">Local agradável e aconchegante. Pequeno mas bem decorado. Preços muito altos. Boa variedade de pratos. Pouco coisa regional.</string>
+
+    <string name="hotels">Hoteis</string>
+    <string name="garden_hotel">GARDEN HOTEL</string>
+    <string name="garden_hotel_street">Rua Eng. José Bezerra, 400 - Mirante</string>
+    <string name="garden_hotel_phone">(83) 33104000</string>
+    <string name="garden_hotel_description">Muito fácil chegar ao hotel. Excelente estrutura e serviços. Ótimo local para eventos. Centro de convenções que atende excepcionalmente as necessidades dos participantes.</string>
+    <string name="hotel_village">HOTEL VILLAGE</string>
+    <string name="hotel_village_street">R. Otacílio Nepomuceno, 1285 - Catolé</string>
+    <string name="hotel_village_phone">(83) 33108000</string>
+    <string name="hotel_village_description">Ótimas acomodações. O café da manhã é o ponto alto com comidas maravilhosas. Excelente para dar uma relaxada na área de lazer. Próximo da rodoviária e do shopping o que torna uma ótima opção para que quer gastar pouco com táxi.</string>
+    <string name="pousada_granvile">POUSADA GRANVILE</string>
+    <string name="pousada_granvile_street">R. Manoel Felíciano, 600 - Jardim Quarenta</string>
+    <string name="pousada_granvile_phone">(83) 33352436</string>
+    <string name="pousada_granvile_description">Esse hotel é muito bom. Tem uma piscina bonita e grande. Café da manhã maravilhoso. Quartos limpos e confortáveis. Os funcionários são super educados e atenciosos.</string>
+
+    <string name="restaurants">Restaurantes</string>
+    <string name="baixinho">BAIXINHO</string>
+    <string name="baixinho_street">R. Papa João Vinte e Três, 101 - Liberdade</string>
+    <string name="baixinho_phone">(83) 33319831</string>
+    <string name="baixinho_description">Comida boa, ambiente agradável, destaque para o file à parmegiana.</string>
+    <string name="la_suissa">LA SUISSA</string>
+    <string name="la_suissa_street">R. Irineu Joffily, 176 - Centro</string>
+    <string name="la_suissa_phone">(83) 33212360</string>
+    <string name="la_suissa_description">Boa variedade de lanches e sobremesas (doces e salgados deliciosos)</string>
+    <string name="skina_da_tapioca">SKINA DA TAPIOCA</string>
+    <string name="skina_da_tapioca_street">R. Afrigio Ribeiro Brito, 24 - Jardim Paulistano</string>
+    <string name="skina_da_tapioca_phone">(83) 988305097</string>
+    <string name="skina_da_tapioca_description">Tapioca, açaí e sanduíches muito gostosos e com um bom preço!</string>
+
     <string name="shops">Shops</string>
-    <string name="bars">Bars</string>
-    <string name="hotels">Hotels</string>
-
-    <string name="undefined">UNDEFINED</string>
-    <string name="loren">Maecenas ipsum velit, consectetuer eu, lobortis ut, dictum at, dui. In rutrum. Sed ac dolor sit amet purus malesuada congue. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Suspendisse sagittis ultrices augue. Mauris metus. Nunc</string>
-
+    <string name="vila_do_artesao">VILA DO ARTESÃO</string>
+    <string name="vila_do_artesao_street">Avenida Almeida Barreto, s/n - São José</string>
+    <string name="vila_do_artesao_phone">(83) 33222425</string>
+    <string name="vila_do_artesao_description">Local muito propicio para quem quer comprar coisas regionais. Local tem uma praca de alimentação, lojas para compras. Loja de roupas, sapatos e artesanato. Ambiente lindo e pessoas agradaveis.</string>
+    <string name="partage_shopping">PARTAGE SHOPPING</string>
+    <string name="partage_shopping_street">Avenida Severino Bezerra Cabral, 1050 - Catolé</string>
+    <string name="partage_shopping_phone">(83) 33445000</string>
+    <string name="partage_shopping_description">O Partage é o principal centro de compras, gastronomia, serviços e entretenimento da região.</string>
+    <string name="luiza_motta">LUIZA MOTTA</string>
+    <string name="luiza_motta_street">R. Afrigio Ribeiro Brito, 24 - Jardim Paulistano</string>
+    <string name="luiza_motta_phone">(83) 33372627</string>
+    <string name="luiza_motta_description">É um shopping pequeno, mas interessante. Boa praça de alimentação. No período junino, nos finais de semana tem shows a tarde na praça de alimentação. Também bom para comprar.</string>
+    
+    <string name="touristic_points">Pontos Turisticos</string>
+    <string name="museu_do_tres_pandeiros">MUSEU DOS TRES PANDEIROS</string>
+    <string name="museu_do_tres_pandeiros_street">R. Dr. Severino Cruz - Centro</string>
+    <string name="museu_do_tres_pandeiros_phone">(83) 33109738</string>
+    <string name="museu_do_tres_pandeiros_description">O museu foi projetado pelo arquiteto Oscar Niemeyer, sendo sua última obra. Desde junho de 2014, o museu acolhe trabalhos dos mais talentosos artistas paraibanos, como Sivuca, Jackson do Pandeiro, Marinês, Elba Ramalho, entre outros.</string>
+    <string name="os_pioneiros">OS PIONEIROS</string>
+    <string name="os_pioneiros_street">R. Paulo de Frontin - Centro</string>
+    <string name="os_pioneiros_description">\'Os Pioneiros da Borborema\' homenageia as figuras do índio, da catadora de algodão e do tropeiro. O índio representa o início de tudo. A catadora de algodão faz referência à \'Era de Ouro\' de Campina Grande, quando o município se tornou o segundo maior exportador de algodão do mundo. E o tropeiro presta homenagem à vocação comerciária da cidade.</string>
+    <string name="parque_do_povo">PARQUE DO POVO</string>
+    <string name="parque_do_povo_street">R. Sebastião Donato- Centro</string>
+    <string name="parque_do_povo_description">O Parque do Povo é conhecido por sediar a festa junina de Campina Grande. Como, por exemplo, o maior são João do Mundo.</string>
+    <string name="farra_de_bodega">FARRA DE BODEGA</string>
+    <string name="farra_de_bodega_street">R. Afrigio Ribeiro Brito - Centro</string>
+    <string name="farra_de_bodega_description">O monumento Farra de Bodega homenageia dois ícones da música nordestina: Jackson do Pandeiro e Luiz Gonzaga.</string>
 
 </resources>

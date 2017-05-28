@@ -23,12 +23,8 @@
             app:srcCompat="@drawable/logo" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
+            style="@style/MenuTextStyle"
             android:text="@string/app_name"
-            android:textColor="@color/white"
             android:textSize="40sp" />
     </LinearLayout>
 
@@ -49,19 +45,12 @@
 
             <ImageButton
                 android:id="@+id/restaurant_button"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
+                style="@style/MenuButtonStyle"
                 android:background="@drawable/restaurant"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="@string/restaurants"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
+                style="@style/MenuTextStyle"
+                android:text="@string/restaurants"/>
         </LinearLayout>
 
         <LinearLayout
@@ -72,19 +61,12 @@
 
             <ImageButton
                 android:id="@+id/touristic_point_button"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
+                style="@style/MenuButtonStyle"
                 android:background="@drawable/touristic_point" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="@string/touristic_points"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
+                style="@style/MenuTextStyle"
+                android:text="@string/touristic_points" />
         </LinearLayout>
     </LinearLayout>
 
@@ -103,19 +85,12 @@
 
             <ImageButton
                 android:id="@+id/shop_button"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
+                style="@style/MenuButtonStyle"
                 android:background="@drawable/shop" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="@string/shops"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
+                style="@style/MenuTextStyle"
+                android:text="@string/shops"/>
         </LinearLayout>
 
         <LinearLayout
@@ -126,19 +101,12 @@
 
             <ImageButton
                 android:id="@+id/bar_button"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
+                style="@style/MenuButtonStyle"
                 android:background="@drawable/bar" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="@string/bars"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
+                style="@style/MenuTextStyle"
+                android:text="@string/bars" />
         </LinearLayout>
 
         <LinearLayout
@@ -149,19 +117,12 @@
 
             <ImageButton
                 android:id="@+id/hotel_button"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
+                style="@style/MenuButtonStyle"
                 android:background="@drawable/hotel" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="@string/hotels"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
+                style="@style/MenuTextStyle"
+                android:text="@string/hotels" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
